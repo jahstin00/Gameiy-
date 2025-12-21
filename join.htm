@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="join.css"/>
+  </head>
+  <body> 
+    <section>
+      <video autoplay muted loop playsinline class="bg-video">
+          <source src="https://res.cloudinary.com/dsd37m7ni/video/upload/v1766336283/Video_Project_6_bn6unv.mp4" type="video/mp4" />
+     </video>
+     <div class="overlay"></div>
+      <div class="join-box">
+        <form action="/submit-join" method="post">
+          <h1 class="neon-flicker">Gameiy Gamer</h1>
+          <p> Join us Now!!!</p>
+          <div class="input-box">
+            <ion-icon name="mail-outline"></ion-icon>
+            <input type="text" name="Email" required />
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <input type="text" name="Gamertag" required />
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" name="password" required />
+            <label>Password</label>
+          </div>
+          <div class="input-box">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" name="ConfirmPassword" required />
+            <label>Confirm Password</label>
+          </div>
+          <div class="dropdown">
+            <label for="region">Select Region</label>
+            <select name="region" id="region">
+              <option value="na">North America</option>
+              <option value="eu">Europe</option>
+              <option value="asia">Asia</option>
+              <option value="sa">South America</option>
+              <option value="af">Africa</option>
+              <option value="au">Australia</option>
+            </select>
+          </div>
+          <div class="term">
+            <label>
+              <input type="checkbox" required />
+              I am at least 13 years old and agree to the
+              <a href="#">Terms of Service</a>
+            </label>
+          </div>
+          <button type="submit"><a href="signin.htm">JOIN NOW</a></button>
+        </form>
+      </div>
+    </section>
+     </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
